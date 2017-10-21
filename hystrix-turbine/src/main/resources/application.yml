@@ -1,0 +1,14 @@
+server:
+  port: 8031
+spring:
+  application:
+    name: hystrix-turbine
+eureka:
+  client:
+    service-url:
+      defaultZone: http://laudy:laudy123@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+turbine:
+  app-config: movie-consumer-service, movie-consumer-feign-service
+  cluster-name-expression: "'default'"
