@@ -7,6 +7,9 @@ security:
     name: laudy
     password: laudy123
 eureka:
+  server:
+    # 禁用自我保护模式
+    enable-self-preservation: false
   client:
     register-with-eureka: false
     fetch-registry: false
