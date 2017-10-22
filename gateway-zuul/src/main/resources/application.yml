@@ -1,0 +1,27 @@
+server:
+  port: 8040
+
+spring:
+  application:
+    name: gateway-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://laudy:laudy123@localhost:8761/eureka/
+
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true
+
+management:
+  security:
+    enabled: false
+
+logging:
+  level:
+    com.netflix: DEBUG
+
+
+

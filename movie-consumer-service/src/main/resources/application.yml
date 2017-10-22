@@ -19,3 +19,8 @@ eureka:
   instance:
     prefer-ip-address: true
 
+ribbon:
+  eager-load:
+    enabled: true
+#    clients: simple-user-service
+
